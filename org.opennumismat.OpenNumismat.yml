@@ -1,13 +1,13 @@
 app-id: org.opennumismat.OpenNumismat
 runtime: org.kde.Platform
-runtime-version: '5.15-21.08'
+runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 command: open-numismat
 rename-icon: open-numismat
 rename-desktop-file: open-numismat.desktop
 rename-appdata-file: open-numismat.appdata.xml
 base: com.riverbankcomputing.PyQt.BaseApp
-base-version: '5.15-21.08'
+base-version: 5.15-21.08
 finish-args:
   - --share=ipc
   - --socket=fallback-x11
@@ -34,8 +34,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/OpenNumismat/open-numismat.git
-        tag: 1.8.15.2
-        commit: 73760bd5bef683f31549bc7caa40979ed4183cda
+        tag: 1.8.15.3
+        commit: fe4e91563204f40a26b2127024f131099ff2d5f1
         x-checker-data:
           type: json
           url: https://api.github.com/repos/OpenNumismat/open-numismat/releases/latest
