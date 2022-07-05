@@ -3,7 +3,6 @@ runtime: org.kde.Platform
 runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 command: open-numismat
-rename-icon: open-numismat
 rename-desktop-file: open-numismat.desktop
 rename-appdata-file: open-numismat.appdata.xml
 base: com.riverbankcomputing.PyQt.BaseApp
@@ -28,9 +27,10 @@ modules:
     build-commands:
       - pip3 install --prefix=/app --no-deps .
       - install -Dm644 open-numismat.desktop /app/share/applications/open-numismat.desktop
-      - install -Dm644 open-numismat.svg /app/share/icons/hicolor/scalable/apps/open-numismat.svg
+      - install -Dm644 open-numismat.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
       - install -Dm644 open-numismat.appdata.xml /app/share/appdata/open-numismat.appdata.xml
       - desktop-file-edit --set-key=Exec --set-value=/app/bin/open-numismat /app/share/applications/open-numismat.desktop
+      - desktop-file-edit --set-key=Icon --set-value=${FLATPAK_ID} /app/share/applications/open-numismat.desktop
     sources:
       - type: git
         url: https://github.com/OpenNumismat/open-numismat.git
@@ -42,4 +42,3 @@ modules:
           tag-query: .tag_name
           version-query: $tag
           timestamp-query: .published_at
-
