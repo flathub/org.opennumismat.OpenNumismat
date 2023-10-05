@@ -9,7 +9,7 @@ rename-appdata-file: open-numismat.appdata.xml
 finish-args:
   - --share=ipc
   - --socket=fallback-x11
-#  - --socket=wayland
+  - --socket=wayland
   - --share=network
   - --filesystem=home
   - --filesystem=/media      # for export to mobile
