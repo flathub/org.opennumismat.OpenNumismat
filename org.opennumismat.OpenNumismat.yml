@@ -25,7 +25,7 @@ build-options:
 cleanup:
   - /include
   - /lib/pkgconfig
-  
+
 modules:
   - python3-requirements.json
 
@@ -54,7 +54,7 @@ modules:
 
   - name: pypi-dependencies
     buildsystem: simple
-    build-commands: [ ]
+    build-commands: []
     config-opts:
       - --force-clean
     modules:
@@ -117,8 +117,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/OpenNumismat/open-numismat.git
-        tag: 1.9.4
-        commit: 9a1ddadb3f4b1b2f2ce6862bbe37a76f19874ffb
+        tag: 1.9.4.0
+        commit: 96c96d6cf7d42fab8aa336f5d8b6fed4d70cbcae
         x-checker-data:
           type: json
           url: https://api.github.com/repos/OpenNumismat/open-numismat/releases/latest
