@@ -24,7 +24,6 @@ build-options:
 
 cleanup:
   - /include
-  - /lib/debug
   - /lib/pkgconfig
   
 modules:
