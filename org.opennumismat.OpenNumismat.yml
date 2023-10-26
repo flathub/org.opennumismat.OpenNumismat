@@ -116,8 +116,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/OpenNumismat/open-numismat.git
-        tag: 1.9.4.0
-        commit: 96c96d6cf7d42fab8aa336f5d8b6fed4d70cbcae
+        tag: 1.9.5
+        commit: fb2b9522797ed50a392d8d95036a73adf17682ff
         x-checker-data:
           type: json
           url: https://api.github.com/repos/OpenNumismat/open-numismat/releases/latest
