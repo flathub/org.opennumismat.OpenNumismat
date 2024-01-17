@@ -5,7 +5,7 @@
     "modules": [
         {
             "name": "python3-imagehash",
-            "buildsystem": "meson",
+            "buildsystem": "simple",
             "build-commands": [
                 "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"imagehash\" --no-build-isolation"
             ],
@@ -27,8 +27,15 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ee/ce/cfce0d615746d9b9ccc698401599183d6edb6d1bb0ae234bd717a840711d/pywavelets-1.5.0.tar.gz",
-                    "sha256": "d9e25c7cabef7ccd53f5fead26ab22152fe4cb937bad7411b5d506e2b5de38f6"
+                    "url": "https://files.pythonhosted.org/packages/a7/58/1724d6362becfa71eded2dffe145e795786b13c3a66f6523f3aff1b3f3cf/pywavelets-1.5.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "49aa6abf9ac941f47f7ea26a3c7dd5c8bfcf0e903dc5ec68ed105b52bfccd4e2",
+                    "only-arches": "x86_64"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/c2/e5/2ba4527a313750b628e95eaab05c36b8cf393f5e081d87ad1a90f87e6459/pywavelets-1.5.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+                    "sha256": "4d9763987b4a79917f007c1d5df0adc81adabbad3c7c0a368f4a7f12034816f3",
+                    "only-arches": "aarch64"
                 },
                 {
                     "type": "file",
