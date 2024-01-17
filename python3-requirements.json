@@ -7,6 +7,7 @@
             "name": "python3-pywavelets",
             "buildsystem": "meson",
             "build-commands": [
+                "ls",
                 "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pywavelets\" --no-build-isolation"
             ],
             "sources": [
