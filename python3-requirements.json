@@ -5,16 +5,15 @@
     "modules": [
         {
             "name": "python3-pywavelets",
-            "buildsystem": "meson",
+            "buildsystem": "simple",
             "build-commands": [
-                "ls",
                 "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pywavelets\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ee/ce/cfce0d615746d9b9ccc698401599183d6edb6d1bb0ae234bd717a840711d/pywavelets-1.5.0.tar.gz",
-                    "sha256": "d9e25c7cabef7ccd53f5fead26ab22152fe4cb937bad7411b5d506e2b5de38f6"
+                    "url": "https://files.pythonhosted.org/packages/b9/c2/7dffd331ac88c1776d8bba0fa77c73202a4ce79dc8d203fc99007b715866/pywavelets-1.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "7a8b58eaf946fbee002cce460d32a0e932c6d9e158aad10eea984e7f26cda15e"
                 }
             ]
         },
@@ -39,11 +38,6 @@
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/f8/3e/32cbd0129a28686621434cbf17bb64bf1458bfb838f1f668262fefce145c/pillow-10.2.0.tar.gz",
                     "sha256": "e87f0b2c78157e12d7686b27d63c070fd65d994e8ddae6f328e0dcf4a0cd007e"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ee/ce/cfce0d615746d9b9ccc698401599183d6edb6d1bb0ae234bd717a840711d/pywavelets-1.5.0.tar.gz",
-                    "sha256": "d9e25c7cabef7ccd53f5fead26ab22152fe4cb937bad7411b5d506e2b5de38f6"
                 },
                 {
                     "type": "file",
