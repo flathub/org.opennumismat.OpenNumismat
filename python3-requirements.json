@@ -7,7 +7,7 @@
             "name": "python3-imagehash",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"imagehash\" --no-build-isolation --no-deps \"pywavelets\""
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"imagehash\" --no-build-isolation
             ],
             "sources": [
                 {
@@ -17,8 +17,15 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d0/b0/13e2b50c95bfc1d5ee04925eb5c105726c838f922d0aaddd57b7c8be0f8b/numpy-1.26.3.tar.gz",
-                    "sha256": "697df43e2b6310ecc9d95f05d5ef20eacc09c7c4ecc9da3f235d39e71b7da1e4"
+                    "url": "https://files.pythonhosted.org/packages/a5/37/d1453c9ff4f7630e68ec036c6fb56ba0d7c769daa8a4083cb4ef8ee45995/numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "bdd2b45bf079d9ad90377048e2747a0c82351989a2165821f0c96831b4a2a54b",
+                    "only-arches": ["x86_64"]
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/37/ec/ef1623be30884230e9fbc689bc1ad4f096b6155b54ddbc1b8726333411c0/numpy-1.26.3-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+                    "sha256": "6d45b3ec2faed4baca41c76617fcdcfa4f684ff7a151ce6fc78ad3b6e85af0a6",
+                    "only-arches": ["aarch64"]
                 },
                 {
                     "type": "file",
@@ -86,8 +93,15 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d0/b0/13e2b50c95bfc1d5ee04925eb5c105726c838f922d0aaddd57b7c8be0f8b/numpy-1.26.3.tar.gz",
-                    "sha256": "697df43e2b6310ecc9d95f05d5ef20eacc09c7c4ecc9da3f235d39e71b7da1e4"
+                    "url": "https://files.pythonhosted.org/packages/a5/37/d1453c9ff4f7630e68ec036c6fb56ba0d7c769daa8a4083cb4ef8ee45995/numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "bdd2b45bf079d9ad90377048e2747a0c82351989a2165821f0c96831b4a2a54b",
+                    "only-arches": ["x86_64"]
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/37/ec/ef1623be30884230e9fbc689bc1ad4f096b6155b54ddbc1b8726333411c0/numpy-1.26.3-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+                    "sha256": "6d45b3ec2faed4baca41c76617fcdcfa4f684ff7a151ce6fc78ad3b6e85af0a6",
+                    "only-arches": ["aarch64"]
                 },
                 {
                     "type": "file",
@@ -131,8 +145,15 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d0/b0/13e2b50c95bfc1d5ee04925eb5c105726c838f922d0aaddd57b7c8be0f8b/numpy-1.26.3.tar.gz",
-                    "sha256": "697df43e2b6310ecc9d95f05d5ef20eacc09c7c4ecc9da3f235d39e71b7da1e4"
+                    "url": "https://files.pythonhosted.org/packages/a5/37/d1453c9ff4f7630e68ec036c6fb56ba0d7c769daa8a4083cb4ef8ee45995/numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "bdd2b45bf079d9ad90377048e2747a0c82351989a2165821f0c96831b4a2a54b",
+                    "only-arches": ["x86_64"]
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/37/ec/ef1623be30884230e9fbc689bc1ad4f096b6155b54ddbc1b8726333411c0/numpy-1.26.3-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+                    "sha256": "6d45b3ec2faed4baca41c76617fcdcfa4f684ff7a151ce6fc78ad3b6e85af0a6",
+                    "only-arches": ["aarch64"]
                 }
             ]
         },
