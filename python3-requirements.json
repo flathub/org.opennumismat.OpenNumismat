@@ -201,8 +201,15 @@
             "sources": [
                 {
                     "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/57/47/dad02f727f908045e2abd8e0e930e7f20e6d1566e30e64fb0578a42af0a9/zxing_cpp-2.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "8256ed05d0978e87847e91e2aff03b21c19cf4256dcb8af8a335de8361f027be",
+                    "only-arches": ["x86_64"]
+                },
+                {
+                    "type": "file",
                     "url": "https://files.pythonhosted.org/packages/a7/8f/77828ef6e7bcad2ed17da58a4af833fce52e2afb6e72214e0403fa0ef197/zxing-cpp-2.2.0.tar.gz",
-                    "sha256": "11884ef9d1a61e47ad89836339da9e1040cb28b083fb37462bc58e8d46f135bc"
+                    "sha256": "11884ef9d1a61e47ad89836339da9e1040cb28b083fb37462bc58e8d46f135bc",
+                    "only-arches": ["aarch64"]
                 }
             ]
         }
