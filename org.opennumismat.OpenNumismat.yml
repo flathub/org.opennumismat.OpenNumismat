@@ -1,6 +1,6 @@
 app-id: org.opennumismat.OpenNumismat
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: open-numismat
 
@@ -53,8 +53,6 @@ modules:
   - name: pypi-dependencies
     buildsystem: simple
     build-commands: []
-    config-opts:
-      - --force-clean
     modules:
       - name: python3-PySide6
         buildsystem: simple
@@ -111,13 +109,13 @@ modules:
       - install -Dm644 open-numismat.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
       - install -Dm644 open-numismat.png /app/share/icons/hicolor/48x48/apps/${FLATPAK_ID}.png
       - install -Dm644 org.opennumismat.OpenNumismat.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
-      - desktop-file-edit --set-key=Exec --set-value=/app/bin/open-numismat /app/share/applications/${FLATPAK_ID}.desktop
-      - desktop-file-edit --set-key=Icon --set-value=${FLATPAK_ID} /app/share/applications/${FLATPAK_ID}.desktop
+      - desktop-file-edit --set-key=Exec --set-value=open-numismat /app/share/applications/${FLATPAK_ID}.desktop
+      - desktop-file-edit --set-icon=${FLATPAK_ID} /app/share/applications/${FLATPAK_ID}.desktop
     sources:
       - type: git
         url: https://github.com/OpenNumismat/open-numismat.git
-        tag: 1.9.12
-        commit: cfd48130db8d086fa44e942a23f4e34756e2ecff
+        tag: 1.9.10
+        commit: 649d45df2e6c4c6aca01a2a06050106679473565
         x-checker-data:
           type: json
           url: https://api.github.com/repos/OpenNumismat/open-numismat/releases/latest
