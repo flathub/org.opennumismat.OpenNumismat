@@ -86,8 +86,13 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/2b/b4/bbccb250adbee490553b6a52712c46c20ea1ba533a643f1424b27ffc6845/lxml-5.1.0.tar.gz",
-                    "sha256": "3eea6ed6e6c918e468e693c41ef07f3c3acc310b70ddd9cc72d9ef84bc9564ca"
+                    "url": "https://files.pythonhosted.org/packages/67/78/aad9c76bf995febcacd836e12ecc670c89737502ebe44f69c472918c8ffd/lxml-5.1.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "f8682af96b5ad5093aab9eee5e4ff24cb7a9796c78699d914dd456ebfe7484a6"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/5b/cf/3da2e345dd19b509c9d269000f16888f4ef50f8ca742c268f8142a7e0b84/lxml-5.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+                    "sha256": "1d380f183bd03ab827899753ea96dabe27d2025eb0bfd4f2ac0eee4afa0f351d"
                 }
             ]
         },
@@ -201,8 +206,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/57/47/dad02f727f908045e2abd8e0e930e7f20e6d1566e30e64fb0578a42af0a9/zxing_cpp-2.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-                    "sha256": "8256ed05d0978e87847e91e2aff03b21c19cf4256dcb8af8a335de8361f027be"
+                    "url": "https://files.pythonhosted.org/packages/95/30/3143bf75944d65c9432349a79b97f9414965a44875ec9eeb5745592b4ecd/zxing_cpp-2.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+                    "sha256": "dec2805c0e9dec0d7707c97ca5196f98d2730d2dfcea80442807123b9f8ec850"
                 }
             ],
             "only-arches": ["x86_64"]
