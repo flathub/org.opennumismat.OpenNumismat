@@ -1,6 +1,4 @@
 {
   "end-of-life": "Application has been renamed to io.github.opennumismat.open-numismat",
-  "end-of-life-rebase": "io.github.opennumismat.open-numismat",
-  "skip-appstream-check": true,
-  "only-arches": ["x86_64"]
+  "end-of-life-rebase": "io.github.opennumismat.open-numismat"
 }
